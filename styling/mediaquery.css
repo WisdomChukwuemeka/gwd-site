@@ -1,0 +1,43 @@
+@media (max-width: 768px){
+    ul .li{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .links{
+        position: absolute;
+        top: 3rem;
+        right: 0.5rem;
+        background-color: rgba(130, 130, 133, 0.5);
+        width: 8rem;
+        height: fit-content;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        line-height: 3rem;
+        border-radius: 5px;
+        font-size: clamp(0.7rem, calc(2vw + 0.8rem), 1rem);
+    }
+    .links li:hover, .login-menu:hover, .get-started-menu:hover{
+        background-color: darkblue;
+        color: white;
+        transition: 1s;
+    }
+    .home-section{
+        .home-container{
+        height: clamp(16rem, calc(50dvh + 40vh), 50dvh);
+    }
+    }
+    
+}
+@media (max-width: 250px){
+    nav{
+        justify-content: center;
+        gap: 1rem;
+    }
+    .login-signup .login, .get-started{
+        display: none;
+    }
+}
