@@ -1,0 +1,48 @@
+.header{
+    background-color: darkgray;
+    font-size: clamp(1rem, 2vw + .5rem, 3rem);
+    padding: 1rem;
+    position: relative;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.menu{
+    display: none;
+}
+
+.menu-content{
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgb(221, 221, 221);
+    width: clamp(20vw, 40vw + 100%, 40vw);
+    height: fit-content;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 5px;
+    color: rgb(2, 0, 0);
+}
+.menu-content li:hover{
+    background-color: darkgreen;
+    color: white;
+    transition: 1s;
+}
+.link{
+    text-decoration: none;
+}
+
+.text{
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
